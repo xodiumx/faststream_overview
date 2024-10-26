@@ -6,6 +6,8 @@
 
 ## TODO
 
+- in progress
 
 ## Application installation
 
+- in progress
