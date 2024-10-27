@@ -12,5 +12,10 @@ class Settings(BaseSettings):
     SERVER_THREADS: int
     SERVER_TIMEOUT: int
 
+    # Kafka
+    KAFKA_HOST: str
+    KAFKA_TOPIC_PRODUCE: str
+    KAFKA_TOPIC_CONSUME: str
+
 
 settings = Settings()
