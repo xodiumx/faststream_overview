@@ -12,6 +12,7 @@ faststream = {extras = ["cli", "kafka", "prometheus"], version = "^0.5.28"}
 pydantic = "2.9.2"
 pydantic-settings = "2.6.0"
 granian = "1.6.1"
+fastapi = "^0.115.3"
 
 [tool.poetry.group.local.dependencies]
 ruff = "^0.6.8"
