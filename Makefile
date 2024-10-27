@@ -11,3 +11,8 @@ simple:
 .PHONY: fastapi
 fastapi:
 	python src/fast_stream/fastapi_integration/run.py
+
+
+.PHONY: multi
+multi:
+	python src/fast_stream/multi/run.py
