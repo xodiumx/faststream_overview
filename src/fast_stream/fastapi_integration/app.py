@@ -4,7 +4,7 @@ from faststream.kafka.fastapi import Logger, KafkaRouter
 from settings import settings
 
 router = KafkaRouter(settings.KAFKA_HOST)
-app = FastAPI(lifespan=router.lifespan_context)
+app = FastAPI()
 publisher = router.publisher(settings.KAFKA_TOPIC_PRODUCE)
 
 
