@@ -55,7 +55,16 @@ make main
 ```
 
 > OpenAPI endpoint - http://localhost:9000/docs
+
 > Prometheus metrics endpoint - http://localhost:9000/metrics
 
 - generated data is sent to the `consume` topic
 - the data after processing is sent to the `pub` topic
+
+- The data generation logs are as follows:
+
+<img width="1216" alt="gen" src="https://github.com/user-attachments/assets/ee38c201-f5d1-4d1c-b66e-fe66c3dd7c41">
+
+- The data processing logs are as follows:
+
+<img width="798" alt="process" src="https://github.com/user-attachments/assets/cd3c1947-3e69-44e7-b8a0-280a098ed613">
