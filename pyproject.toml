@@ -13,6 +13,9 @@ pydantic = "2.9.2"
 pydantic-settings = "2.6.0"
 granian = "1.6.1"
 fastapi = "^0.115.3"
+faker = "^30.8.1"
+confluent-kafka = "^2.6.0"
+orjson = "^3.10.11"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"

@@ -1,0 +1,12 @@
+# files
+.env.example
+.pre-commit-config.yaml
+README.md
+
+# dirs
+dev/
+docs/
+src/tests
+src/fast_stream/simple
+src/fast_stream/multi
+src/fast_stream/fastapi_integration

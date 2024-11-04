@@ -6,7 +6,7 @@ from settings import settings
 
 def get_server() -> Granian:
     return Granian(
-        "app:app",
+        "fast_stream.custom.app:app",
         reload=settings.DEBUG,
         port=settings.SERVER_PORT,
         address=settings.SERVER_BIND,

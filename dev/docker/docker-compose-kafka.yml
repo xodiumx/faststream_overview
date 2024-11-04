@@ -8,8 +8,6 @@ services:
         - 2181:2181
     environment:
         - ALLOW_ANONYMOUS_LOGIN=yes
-    networks:
-    - kafka
 
   kafka:
     image: bitnami/kafka:latest
@@ -26,8 +24,6 @@ services:
         - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
     depends_on:
         - zookeeper
-    networks:
-    - kafka
 
   redpanda-kafka-ui:
     image: redpandadata/console:latest
@@ -35,8 +31,6 @@ services:
       KAFKA_BROKERS: "kafka:9092"
     ports:
     - "8080:8080"
-    networks:
-    - kafka
 
 networks:
   kafka:

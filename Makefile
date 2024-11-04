@@ -2,6 +2,10 @@
 kafka:
 	docker-compose -f ./dev/docker/docker-compose-kafka.yml up -d
 
+.PHONY: main
+main:
+	docker-compose -f ./dev/docker/docker-compose-main.yml up -d
+
 
 .PHONY: simple
 simple:
@@ -16,3 +20,13 @@ fastapi:
 .PHONY: multi
 multi:
 	python src/fast_stream/multi/run.py
+
+
+.PHONY: app
+app:
+	python src/fast_stream/custom/run.py
+
+
+.PHONY: data
+data:
+	python src/data/generate.py
